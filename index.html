@@ -14,35 +14,7 @@
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
         rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    colors: {
-                        "primary": "#000080", // National Blue
-                        "secondary": "#FF9933", // Saffron
-                        "success-green": "#138808", // India Green
-                        "background-light": "#f8f9fa",
-                        "background-dark": "#0f0f23",
-                    },
-                    fontFamily: {
-                        "display": ["Inter", "sans-serif"],
-                        "sans": ["Noto Sans", "sans-serif"],
-                    },
-                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "2xl": "1rem", "3xl": "1.5rem", "full": "9999px" },
-                    boxShadow: {
-                        'soft': '0 10px 40px -10px rgba(0,0,0,0.08)',
-                        'inner-light': 'inset 0 2px 4px 0 rgba(255, 255, 255, 0.3)',
-                        'glow': '0 0 20px rgba(255, 153, 51, 0.3)',
-                    },
-                    backgroundImage: {
-                        'hero-gradient': 'linear-gradient(90deg, rgba(0,0,20,0.9) 0%, rgba(0,0,60,0.7) 50%, rgba(0,0,0,0) 100%)',
-                    }
-                },
-            },
-        }
-    </script>
+    <script src="tailwind_config.js"></script>
     <style>
         .glass-button {
             background: rgba(255, 255, 255, 0.1);
@@ -162,16 +134,20 @@
                     </li>
                     <li
                         class="h-full flex items-center border-b-[3px] border-transparent hover:border-secondary transition-all cursor-pointer">
-                        <a class="text-white/90 hover:text-white" href="#">About UIDAI</a></li>
+                        <a class="text-white/90 hover:text-white" href="#">About UIDAI</a>
+                    </li>
                     <li
                         class="h-full flex items-center border-b-[3px] border-transparent hover:border-secondary transition-all cursor-pointer">
-                        <a class="text-white/90 hover:text-white" href="#">Ecosystem</a></li>
+                        <a class="text-white/90 hover:text-white" href="#">Ecosystem</a>
+                    </li>
                     <li
                         class="h-full flex items-center border-b-[3px] border-transparent hover:border-secondary transition-all cursor-pointer">
-                        <a class="text-white/90 hover:text-white" href="#">Media &amp; Resources</a></li>
+                        <a class="text-white/90 hover:text-white" href="#">Media &amp; Resources</a>
+                    </li>
                     <li
                         class="h-full flex items-center border-b-[3px] border-transparent hover:border-secondary transition-all cursor-pointer">
-                        <a class="text-white/90 hover:text-white" href="#">Contact &amp; Support</a></li>
+                        <a class="text-white/90 hover:text-white" href="#">Contact &amp; Support</a>
+                    </li>
                 </ul>
                 <div class="flex items-center w-full md:w-auto mt-2 md:mt-0 pb-2 md:pb-0">
                     <div class="relative w-full md:w-64 group">
@@ -766,6 +742,7 @@
         </div>
     </footer>
 
-<script src="demo_guide.js"></script></body>
+    <script src="demo_guide.js"></script>
+</body>
 
 </html>

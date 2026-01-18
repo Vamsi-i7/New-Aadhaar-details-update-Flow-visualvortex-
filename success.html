@@ -18,28 +18,7 @@
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <!-- Theme Configuration -->
-    <script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    colors: {
-                        "primary": "#000080", // Navy Blue
-                        "primary-light": "#e6e6f2",
-                        "success": "#16A34A", // Green
-                        "background-light": "#f5f5f8",
-                        "background-dark": "#0f0f23",
-                        "surface-light": "#ffffff",
-                        "surface-dark": "#1e1e38",
-                    },
-                    fontFamily: {
-                        "display": ["Inter", "sans-serif"]
-                    },
-                    borderRadius: { "DEFAULT": "0.25rem", "md": "0.375rem", "lg": "0.5rem", "xl": "0.75rem", "2xl": "1rem", "full": "9999px" },
-                },
-            },
-        }
-    </script>
+    <script src="tailwind_config.js"></script>
 </head>
 
 <body
@@ -193,6 +172,7 @@
         class="mt-auto py-6 text-center border-t border-slate-200 dark:border-slate-800 bg-surface-light dark:bg-surface-dark text-slate-500 dark:text-slate-400 text-sm">
         <p>© 2024 Unique Identification Authority of India. All rights reserved.</p>
     </footer>
-<script src="demo_guide.js"></script></body>
+    <script src="demo_guide.js"></script>
+</body>
 
 </html>

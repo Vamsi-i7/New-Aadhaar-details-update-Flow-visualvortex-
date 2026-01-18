@@ -11,33 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&amp;display=swap"
         rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    colors: {
-                        "primary": "#000080", // National Blue
-                        "primary-hover": "#000066",
-                        "saffron": "#FF9933", // Saffron Accent
-                        "background-light": "#F3F4F6", // Light Gray Background
-                        "surface": "#FFFFFF",
-                    },
-                    fontFamily: {
-                        "sans": ["Noto Sans", "sans-serif"],
-                        "display": ["Noto Sans", "sans-serif"]
-                    },
-                    borderRadius: {
-                        "card": "16px",
-                    },
-                    boxShadow: {
-                        "premium": "0 20px 40px -12px rgba(0, 0, 0, 0.12), 0 0 1px 0 rgba(0,0,0,0.1)",
-                        "glass": "0 8px 32px 0 rgba(31, 38, 135, 0.10)",
-                    }
-                },
-            },
-        }
-    </script>
+    <script src="tailwind_config.js"></script>
     <style type="text/tailwindcss">
         @layer utilities {
             .glass-panel {
@@ -238,6 +212,7 @@
             reserved.</p>
     </footer>
 
-<script src="demo_guide.js"></script></body>
+    <script src="demo_guide.js"></script>
+</body>
 
 </html>

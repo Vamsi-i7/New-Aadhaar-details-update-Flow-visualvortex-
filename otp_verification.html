@@ -21,40 +21,7 @@
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <!-- Tailwind Config -->
-    <script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    colors: {
-                        "primary": "#1111d4",
-                        "primary-hover": "#0e0eb5",
-                        "background-light": "#f6f6f8",
-                        "background-dark": "#101022",
-                        "surface-light": "#ffffff",
-                        "surface-dark": "#1a1a2e",
-                        "text-main": "#0d0d1b",
-                        "text-muted": "#5d5d6b",
-                    },
-                    fontFamily: {
-                        "display": ["Inter", "sans-serif"],
-                        "sans": ["Inter", "sans-serif"],
-                    },
-                    borderRadius: {
-                        "DEFAULT": "0.25rem",
-                        "lg": "0.5rem",
-                        "xl": "0.75rem",
-                        "2xl": "1rem",
-                        "full": "9999px"
-                    },
-                    boxShadow: {
-                        'card': '0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03)',
-                        'card-hover': '0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.025)',
-                    }
-                },
-            },
-        }
-    </script>
+    <script src="tailwind_config.js"></script>
     <style>
         /* Custom styles for input number spinners removal */
         input[type=number]::-webkit-inner-spin-button,
@@ -220,6 +187,7 @@
             });
         });
     </script>
-<script src="demo_guide.js"></script></body>
+    <script src="demo_guide.js"></script>
+</body>
 
 </html>
