@@ -96,6 +96,8 @@
 
 <body
     class="bg-background-light dark:bg-background-dark font-sans text-gray-900 dark:text-gray-100 antialiased overflow-x-hidden">
+    <!-- Government Certification Banner -->
+    <div class="bg-gradient-to-r from-saffron via-white to-green-600 h-1"></div>
     <div class="bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700 relative z-50">
         <div class="max-w-[1360px] mx-auto px-6 lg:px-10">
             <div
@@ -154,7 +156,7 @@
                         class="h-14 w-24 bg-contain bg-no-repeat bg-center ml-8 border-l pl-8 border-gray-200 hidden lg:block"
                         style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA3U6QpO0DSN1XgDLOHqr3ChFmNXX2AtdC6WRboe76qLOG1VCKlmlprILJA8ojw-NyUMhSZtvxg-Rqa0lYOUlC8g39mayujBUH9MksUntDd6njKVa7Rf28hil45fEIgQYce9nSiq1RZPlKkvyIvHCvukwD1c3fJbUQ3w1ed84rgC7vnBYsGDI-eyn7JzU_M6ZcT5ZDS6wSJ4rit7uBnZ6U3mME7ijWR_7dw5QkYBKps9QXi1OGlkDzIjnD94Viy-wRW0msSscJaow');">
                     </div>
-                    <button class="md:hidden p-2 text-gray-600 dark:text-gray-300">
+                    <button class="md:hidden p-2 text-gray-600 dark:text-gray-300" id="mobile-menu-toggle">
                         <span class="material-symbols-outlined text-3xl">menu</span>
                     </button>
                 </div>
@@ -170,8 +172,8 @@
     </header>
     <nav class="bg-primary text-white sticky top-0 z-50 shadow-lg border-t border-blue-900">
         <div class="max-w-[1360px] mx-auto px-6 lg:px-10">
-            <div class="flex flex-wrap items-center justify-between h-14">
-                <ul class="hidden md:flex items-center gap-8 text-[15px] font-medium h-full">
+            <div class="flex flex-wrap items-center justify-between min-h-14">
+                <ul class="hidden md:flex items-center gap-8 text-[15px] font-medium h-14">
                     <li
                         class="h-full flex items-center border-b-[3px] border-transparent hover:border-secondary transition-all cursor-pointer group">
                         <a class="flex items-center gap-1 py-3 text-white/90 hover:text-white" href="#">
@@ -210,8 +212,43 @@
                 </div>
             </div>
         </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-blue-900 border-t border-blue-800">
+            <ul class="py-2">
+                <li class="border-b border-blue-800/50">
+                    <a class="flex items-center justify-between px-6 py-3 text-white/90 hover:bg-blue-800 hover:text-white transition-colors" href="#">
+                        <span>My Aadhaar</span>
+                        <span class="material-symbols-outlined text-lg">chevron_right</span>
+                    </a>
+                </li>
+                <li class="border-b border-blue-800/50">
+                    <a class="flex items-center justify-between px-6 py-3 text-white/90 hover:bg-blue-800 hover:text-white transition-colors" href="#">
+                        <span>About UIDAI</span>
+                        <span class="material-symbols-outlined text-lg">chevron_right</span>
+                    </a>
+                </li>
+                <li class="border-b border-blue-800/50">
+                    <a class="flex items-center justify-between px-6 py-3 text-white/90 hover:bg-blue-800 hover:text-white transition-colors" href="#">
+                        <span>Ecosystem</span>
+                        <span class="material-symbols-outlined text-lg">chevron_right</span>
+                    </a>
+                </li>
+                <li class="border-b border-blue-800/50">
+                    <a class="flex items-center justify-between px-6 py-3 text-white/90 hover:bg-blue-800 hover:text-white transition-colors" href="#">
+                        <span>Media & Resources</span>
+                        <span class="material-symbols-outlined text-lg">chevron_right</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="flex items-center justify-between px-6 py-3 text-white/90 hover:bg-blue-800 hover:text-white transition-colors" href="#">
+                        <span>Contact & Support</span>
+                        <span class="material-symbols-outlined text-lg">chevron_right</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </nav>
-    <section class="relative bg-gray-900 h-[600px] overflow-hidden">
+    <section class="relative bg-gray-900 h-[500px] sm:h-[600px] overflow-hidden">
         <div class="absolute inset-0 bg-cover bg-center transform hover:scale-105 transition-transform duration-[20s]"
             style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAPuAzKI3upFaM09bq8VsvT6OcbbJRMP1t1ZnQp2NPoSBDDceA0vvhDTCpQJFNVZCwsPt1eFedva9TRQZJ9BMWWXaRzSPRh0wDbTkfrO-BCi5HWtA093f_ruT_n4fAjBF09GVTyakpaal5XMIL8IY-aklv_v6BVPYXSKXdzysQVFkYUEGNdd2qWZ3EnMi6QmXIY5QTjyhjqEADfpbzrH3zpBfd-JnKjUt7LkZTSJT9Lzy9Rv2ectnBgKqJRwfOsW0xYFsWP4MGchg');">
         </div>
@@ -224,26 +261,26 @@
                         <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span> Official Portal
                     </div>
                     <h1
-                        class="text-5xl lg:text-7xl font-sans font-bold tracking-tight leading-tight text-white drop-shadow-xl">
+                        class="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-sans font-bold tracking-tight leading-tight text-white drop-shadow-xl">
                         One India,<br />
                         <span class="text-transparent bg-clip-text bg-gradient-to-r from-secondary to-yellow-300">One
                             Identity</span>
                     </h1>
-                    <p class="text-lg font-light text-blue-50/90 max-w-xl leading-relaxed">
+                    <p class="text-base sm:text-lg font-light text-blue-50/90 max-w-xl leading-relaxed">
                         Empowering 1.4 billion residents with a secure digital identity. Experience the new era of
                         governance with seamless access to Aadhaar services.
                     </p>
-                    <div class="flex flex-wrap gap-5 pt-4">
+                    <div class="flex flex-col sm:flex-row flex-wrap gap-4 sm:gap-5 pt-4">
                         <button
-                            class="bg-secondary hover:bg-orange-600 text-white px-8 py-4 rounded-lg font-bold shadow-lg shadow-orange-500/30 transition-all hover:-translate-y-1 flex items-center gap-3">
-                            Book Appointment
-                            <span class="material-symbols-outlined">calendar_month</span>
+                            class="bg-secondary hover:bg-orange-600 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-sm sm:text-base font-bold shadow-lg shadow-orange-500/30 transition-all hover:-translate-y-1 flex items-center justify-center gap-2 sm:gap-3 w-full sm:w-auto">
+                            <span>Book Appointment</span>
+                            <span class="material-symbols-outlined text-xl sm:text-2xl">calendar_month</span>
                         </button>
                         <button
-                            class="glass-button text-white px-8 py-4 rounded-lg font-bold transition-all flex items-center gap-3 group">
-                            Check Status
+                            class="glass-button text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-sm sm:text-base font-bold transition-all flex items-center justify-center gap-2 sm:gap-3 group w-full sm:w-auto">
+                            <span>Check Status</span>
                             <span
-                                class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                                class="material-symbols-outlined group-hover:translate-x-1 transition-transform text-xl sm:text-2xl">arrow_forward</span>
                         </button>
                     </div>
                 </div>
@@ -328,6 +365,49 @@
             </div>
         </div>
     </div>
+    <!-- Statistics Section -->
+    <section class="bg-gradient-to-br from-blue-900 via-blue-800 to-blue-900 py-16 mb-16">
+        <div class="max-w-[1360px] mx-auto px-6 lg:px-10">
+            <div class="text-center mb-12">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 backdrop-blur-md text-white text-xs font-bold tracking-wider uppercase mb-4">
+                    <span class="material-symbols-outlined text-sm">verified</span>
+                    Trusted by Billions
+                </div>
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-3">Aadhaar at a Glance</h2>
+                <p class="text-blue-200 text-sm md:text-base max-w-2xl mx-auto">Powering India's digital transformation with secure and inclusive identity solutions</p>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
+                <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 text-center hover:bg-white/15 transition-all hover:scale-105 cursor-pointer">
+                    <div class="w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-gradient-to-br from-orange-400 to-orange-600 flex items-center justify-center mx-auto mb-4 shadow-lg">
+                        <span class="material-symbols-outlined text-white text-2xl sm:text-3xl">groups</span>
+                    </div>
+                    <div class="text-3xl sm:text-4xl font-bold text-white mb-2">1.4B+</div>
+                    <div class="text-xs sm:text-sm text-blue-200 font-medium">Aadhaar Generated</div>
+                </div>
+                <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 text-center hover:bg-white/15 transition-all hover:scale-105 cursor-pointer">
+                    <div class="w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-gradient-to-br from-green-400 to-green-600 flex items-center justify-center mx-auto mb-4 shadow-lg">
+                        <span class="material-symbols-outlined text-white text-2xl sm:text-3xl">security</span>
+                    </div>
+                    <div class="text-3xl sm:text-4xl font-bold text-white mb-2">90B+</div>
+                    <div class="text-xs sm:text-sm text-blue-200 font-medium">Authentications Done</div>
+                </div>
+                <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 text-center hover:bg-white/15 transition-all hover:scale-105 cursor-pointer">
+                    <div class="w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center mx-auto mb-4 shadow-lg">
+                        <span class="material-symbols-outlined text-white text-2xl sm:text-3xl">update</span>
+                    </div>
+                    <div class="text-3xl sm:text-4xl font-bold text-white mb-2">750M+</div>
+                    <div class="text-xs sm:text-sm text-blue-200 font-medium">Updates Processed</div>
+                </div>
+                <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 text-center hover:bg-white/15 transition-all hover:scale-105 cursor-pointer">
+                    <div class="w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-gradient-to-br from-purple-400 to-purple-600 flex items-center justify-center mx-auto mb-4 shadow-lg">
+                        <span class="material-symbols-outlined text-white text-2xl sm:text-3xl">location_city</span>
+                    </div>
+                    <div class="text-3xl sm:text-4xl font-bold text-white mb-2">54,000+</div>
+                    <div class="text-xs sm:text-sm text-blue-200 font-medium">Enrollment Centers</div>
+                </div>
+            </div>
+        </div>
+    </section>
     <main class="max-w-[1360px] mx-auto px-6 lg:px-10 pb-24">
         <div class="mb-20">
             <div class="flex items-end justify-between mb-10 border-b border-gray-100 pb-4">
@@ -342,64 +422,64 @@
                     View Dashboard <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
                 </a>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 lg:gap-10">
                 <div
                     class="service-card bg-gradient-to-br from-white to-blue-50/30 dark:from-gray-800 dark:to-gray-800 rounded-2xl shadow-lg hover:shadow-2xl border-2 border-blue-100 dark:border-gray-700 overflow-hidden group h-full">
-                    <div class="p-8 bg-gradient-to-r from-blue-50/50 to-transparent dark:from-gray-700/50 relative overflow-hidden">
+                    <div class="p-5 sm:p-6 md:p-8 bg-gradient-to-r from-blue-50/50 to-transparent dark:from-gray-700/50 relative overflow-hidden">
                         <div class="absolute -top-6 -right-6 w-32 h-32 bg-blue-500/5 rounded-full blur-2xl group-hover:bg-blue-500/10 transition-all"></div>
-                        <div class="flex items-start justify-between mb-4">
-                            <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
-                                <span class="material-symbols-outlined text-3xl text-white">fingerprint</span>
+                        <div class="flex items-start justify-between mb-3 sm:mb-4">
+                            <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                                <span class="material-symbols-outlined text-2xl sm:text-3xl text-white">fingerprint</span>
                             </div>
-                            <span class="text-xs font-bold text-blue-600 bg-blue-100 px-3 py-1 rounded-full">NEW USERS</span>
+                            <span class="text-[10px] sm:text-xs font-bold text-blue-600 bg-blue-100 px-2 sm:px-3 py-1 rounded-full whitespace-nowrap">NEW USERS</span>
                         </div>
-                        <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-2">Get Aadhaar</h3>
-                        <p class="text-sm text-gray-600 dark:text-gray-400">Essential services for new enrolments and registration.</p>
+                        <h3 class="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white mb-2">Get Aadhaar</h3>
+                        <p class="text-xs sm:text-sm text-gray-600 dark:text-gray-400">Essential services for new enrolments and registration.</p>
                     </div>
                     <ul class="divide-y divide-gray-100 dark:divide-gray-700 bg-white dark:bg-gray-800">
-                        <li><a class="service-link flex items-center justify-between px-5 py-4 hover:bg-blue-50 dark:hover:bg-gray-700/50 text-sm font-medium text-gray-700 dark:text-gray-200 hover:text-blue-600 group/link"
+                        <li><a class="service-link flex items-center justify-between px-4 sm:px-5 py-3 sm:py-4 hover:bg-blue-50 dark:hover:bg-gray-700/50 text-xs sm:text-sm font-medium text-gray-700 dark:text-gray-200 hover:text-blue-600 group/link"
                                 href="#">
-                                <span class="flex items-center gap-3">
-                                    <span class="material-symbols-outlined text-lg text-gray-400 group-hover/link:text-blue-500">location_on</span>
-                                    Locate Enrolment Center
+                                <span class="flex items-center gap-2 sm:gap-3">
+                                    <span class="material-symbols-outlined text-base sm:text-lg text-gray-400 group-hover/link:text-blue-500">location_on</span>
+                                    <span class="line-clamp-1">Locate Enrolment Center</span>
                                 </span>
-                                <span class="material-symbols-outlined text-gray-300 text-lg group-hover/link:text-blue-500 group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
+                                <span class="material-symbols-outlined text-gray-300 text-lg group-hover/link:text-blue-500 group-hover/link:translate-x-1 transition-transform flex-shrink-0">arrow_forward</span>
                             </a>
                         </li>
-                        <li><a class="service-link flex items-center justify-between px-5 py-4 hover:bg-blue-50 dark:hover:bg-gray-700/50 text-sm font-medium text-gray-700 dark:text-gray-200 hover:text-blue-600 group/link"
+                        <li><a class="service-link flex items-center justify-between px-4 sm:px-5 py-3 sm:py-4 hover:bg-blue-50 dark:hover:bg-gray-700/50 text-xs sm:text-sm font-medium text-gray-700 dark:text-gray-200 hover:text-blue-600 group/link"
                                 href="#">
-                                <span class="flex items-center gap-3">
-                                    <span class="material-symbols-outlined text-lg text-gray-400 group-hover/link:text-blue-500">calendar_month</span>
-                                    Book an Appointment
+                                <span class="flex items-center gap-2 sm:gap-3">
+                                    <span class="material-symbols-outlined text-base sm:text-lg text-gray-400 group-hover/link:text-blue-500">calendar_month</span>
+                                    <span class="line-clamp-1">Book an Appointment</span>
                                 </span>
-                                <span class="material-symbols-outlined text-gray-300 text-lg group-hover/link:text-blue-500 group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
+                                <span class="material-symbols-outlined text-gray-300 text-lg group-hover/link:text-blue-500 group-hover/link:translate-x-1 transition-transform flex-shrink-0">arrow_forward</span>
                             </a>
                         </li>
-                        <li><a class="service-link flex items-center justify-between px-5 py-4 hover:bg-blue-50 dark:hover:bg-gray-700/50 text-sm font-medium text-gray-700 dark:text-gray-200 hover:text-blue-600 group/link"
+                        <li><a class="service-link flex items-center justify-between px-4 sm:px-5 py-3 sm:py-4 hover:bg-blue-50 dark:hover:bg-gray-700/50 text-xs sm:text-sm font-medium text-gray-700 dark:text-gray-200 hover:text-blue-600 group/link"
                                 href="#">
-                                <span class="flex items-center gap-3">
-                                    <span class="material-symbols-outlined text-lg text-gray-400 group-hover/link:text-blue-500">pending</span>
-                                    Check Status
+                                <span class="flex items-center gap-2 sm:gap-3">
+                                    <span class="material-symbols-outlined text-base sm:text-lg text-gray-400 group-hover/link:text-blue-500">pending</span>
+                                    <span class="line-clamp-1">Check Status</span>
                                 </span>
-                                <span class="material-symbols-outlined text-gray-300 text-lg group-hover/link:text-blue-500 group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
+                                <span class="material-symbols-outlined text-gray-300 text-lg group-hover/link:text-blue-500 group-hover/link:translate-x-1 transition-transform flex-shrink-0">arrow_forward</span>
                             </a>
                         </li>
-                        <li><a class="service-link flex items-center justify-between px-5 py-4 hover:bg-blue-50 dark:hover:bg-gray-700/50 text-sm font-medium text-gray-700 dark:text-gray-200 hover:text-blue-600 group/link"
+                        <li><a class="service-link flex items-center justify-between px-4 sm:px-5 py-3 sm:py-4 hover:bg-blue-50 dark:hover:bg-gray-700/50 text-xs sm:text-sm font-medium text-gray-700 dark:text-gray-200 hover:text-blue-600 group/link"
                                 href="#">
-                                <span class="flex items-center gap-3">
-                                    <span class="material-symbols-outlined text-lg text-gray-400 group-hover/link:text-blue-500">download</span>
-                                    Download Aadhaar
+                                <span class="flex items-center gap-2 sm:gap-3">
+                                    <span class="material-symbols-outlined text-base sm:text-lg text-gray-400 group-hover/link:text-blue-500">download</span>
+                                    <span class="line-clamp-1">Download Aadhaar</span>
                                 </span>
-                                <span class="material-symbols-outlined text-gray-300 text-lg group-hover/link:text-blue-500 group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
+                                <span class="material-symbols-outlined text-gray-300 text-lg group-hover/link:text-blue-500 group-hover/link:translate-x-1 transition-transform flex-shrink-0">arrow_forward</span>
                             </a>
                         </li>
-                        <li><a class="service-link flex items-center justify-between px-5 py-4 hover:bg-blue-50 dark:hover:bg-gray-700/50 text-sm font-medium text-gray-700 dark:text-gray-200 hover:text-blue-600 group/link"
+                        <li><a class="service-link flex items-center justify-between px-4 sm:px-5 py-3 sm:py-4 hover:bg-blue-50 dark:hover:bg-gray-700/50 text-xs sm:text-sm font-medium text-gray-700 dark:text-gray-200 hover:text-blue-600 group/link"
                                 href="#">
-                                <span class="flex items-center gap-3">
-                                    <span class="material-symbols-outlined text-lg text-gray-400 group-hover/link:text-blue-500">badge</span>
-                                    Retrieve EID/UID
+                                <span class="flex items-center gap-2 sm:gap-3">
+                                    <span class="material-symbols-outlined text-base sm:text-lg text-gray-400 group-hover/link:text-blue-500">badge</span>
+                                    <span class="line-clamp-1">Retrieve EID/UID</span>
                                 </span>
-                                <span class="material-symbols-outlined text-gray-300 text-lg group-hover/link:text-blue-500 group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
+                                <span class="material-symbols-outlined text-gray-300 text-lg group-hover/link:text-blue-500 group-hover/link:translate-x-1 transition-transform flex-shrink-0">arrow_forward</span>
                             </a>
                         </li>
                     </ul>
@@ -411,124 +491,124 @@
                         <span class="material-symbols-outlined text-[14px]">star</span>
                         MOST USED
                     </div>
-                    <div class="p-8 bg-gradient-to-r from-orange-50/50 to-transparent dark:from-gray-700/50 relative overflow-hidden">
+                    <div class="p-5 sm:p-6 md:p-8 bg-gradient-to-r from-orange-50/50 to-transparent dark:from-gray-700/50 relative overflow-hidden">
                         <div class="absolute -top-6 -right-6 w-32 h-32 bg-orange-500/5 rounded-full blur-2xl group-hover:bg-orange-500/10 transition-all"></div>
-                        <div class="flex items-start justify-between mb-4">
-                            <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-orange-500 to-orange-700 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
-                                <span class="material-symbols-outlined text-3xl text-white">edit_document</span>
+                        <div class="flex items-start justify-between mb-3 sm:mb-4">
+                            <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-gradient-to-br from-orange-500 to-orange-700 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                                <span class="material-symbols-outlined text-2xl sm:text-3xl text-white">edit_document</span>
                             </div>
-                            <span class="text-xs font-bold text-orange-600 bg-orange-100 px-3 py-1 rounded-full">POPULAR</span>
+                            <span class="text-[10px] sm:text-xs font-bold text-orange-600 bg-orange-100 px-2 sm:px-3 py-1 rounded-full whitespace-nowrap">POPULAR</span>
                         </div>
-                        <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-2"><a
+                        <h3 class="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white mb-2"><a
                                 href="update_aadhaar_login.html" class="hover:text-orange-600 transition-colors">Update Aadhaar</a></h3>
-                        <p class="text-sm text-gray-600 dark:text-gray-400">Keep your details up to date and accurate.</p>
+                        <p class="text-xs sm:text-sm text-gray-600 dark:text-gray-400">Keep your details up to date and accurate.</p>
                     </div>
                     <ul class="divide-y divide-gray-100 dark:divide-gray-700 bg-white dark:bg-gray-800">
-                        <li><a class="service-link flex items-center justify-between px-5 py-4 hover:bg-orange-50 dark:hover:bg-gray-700/50 text-sm font-medium text-gray-700 dark:text-gray-200 hover:text-orange-600 group/link"
+                        <li><a class="service-link flex items-center justify-between px-4 sm:px-5 py-3 sm:py-4 hover:bg-orange-50 dark:hover:bg-gray-700/50 text-xs sm:text-sm font-medium text-gray-700 dark:text-gray-200 hover:text-orange-600 group/link"
                                 href="#">
                                 <span class="flex items-center gap-3">
                                     <span class="material-symbols-outlined text-lg text-gray-400 group-hover/link:text-orange-500">description</span>
                                     Document Update
                                     <span class="px-2 py-0.5 rounded-full text-[10px] bg-red-100 text-red-600 font-bold animate-pulse">URGENT</span>
                                 </span>
-                                <span class="material-symbols-outlined text-gray-300 text-lg group-hover/link:text-orange-500 group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
+                                <span class="material-symbols-outlined text-gray-300 text-lg group-hover/link:text-orange-500 group-hover/link:translate-x-1 transition-transform flex-shrink-0">arrow_forward</span>
                             </a>
                         </li>
-                        <li><a class="service-link flex items-center justify-between px-5 py-4 hover:bg-orange-50 dark:hover:bg-gray-700/50 text-sm font-medium text-gray-700 dark:text-gray-200 hover:text-orange-600 group/link"
+                        <li><a class="service-link flex items-center justify-between px-4 sm:px-5 py-3 sm:py-4 hover:bg-orange-50 dark:hover:bg-gray-700/50 text-xs sm:text-sm font-medium text-gray-700 dark:text-gray-200 hover:text-orange-600 group/link"
                                 href="#">
                                 <span class="flex items-center gap-3">
                                     <span class="material-symbols-outlined text-lg text-gray-400 group-hover/link:text-orange-500">person_edit</span>
                                     Update Demographics
                                 </span>
-                                <span class="material-symbols-outlined text-gray-300 text-lg group-hover/link:text-orange-500 group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
+                                <span class="material-symbols-outlined text-gray-300 text-lg group-hover/link:text-orange-500 group-hover/link:translate-x-1 transition-transform flex-shrink-0">arrow_forward</span>
                             </a>
                         </li>
-                        <li><a class="service-link flex items-center justify-between px-5 py-4 hover:bg-orange-50 dark:hover:bg-gray-700/50 text-sm font-medium text-gray-700 dark:text-gray-200 hover:text-orange-600 group/link"
+                        <li><a class="service-link flex items-center justify-between px-4 sm:px-5 py-3 sm:py-4 hover:bg-orange-50 dark:hover:bg-gray-700/50 text-xs sm:text-sm font-medium text-gray-700 dark:text-gray-200 hover:text-orange-600 group/link"
                                 href="#">
                                 <span class="flex items-center gap-3">
                                     <span class="material-symbols-outlined text-lg text-gray-400 group-hover/link:text-orange-500">update</span>
                                     Check Update Status
                                 </span>
-                                <span class="material-symbols-outlined text-gray-300 text-lg group-hover/link:text-orange-500 group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
+                                <span class="material-symbols-outlined text-gray-300 text-lg group-hover/link:text-orange-500 group-hover/link:translate-x-1 transition-transform flex-shrink-0">arrow_forward</span>
                             </a>
                         </li>
-                        <li><a class="service-link flex items-center justify-between px-5 py-4 hover:bg-orange-50 dark:hover:bg-gray-700/50 text-sm font-medium text-gray-700 dark:text-gray-200 hover:text-orange-600 group/link"
+                        <li><a class="service-link flex items-center justify-between px-4 sm:px-5 py-3 sm:py-4 hover:bg-orange-50 dark:hover:bg-gray-700/50 text-xs sm:text-sm font-medium text-gray-700 dark:text-gray-200 hover:text-orange-600 group/link"
                                 href="#">
                                 <span class="flex items-center gap-3">
                                     <span class="material-symbols-outlined text-lg text-gray-400 group-hover/link:text-orange-500">home</span>
                                     Address Update
                                 </span>
-                                <span class="material-symbols-outlined text-gray-300 text-lg group-hover/link:text-orange-500 group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
+                                <span class="material-symbols-outlined text-gray-300 text-lg group-hover/link:text-orange-500 group-hover/link:translate-x-1 transition-transform flex-shrink-0">arrow_forward</span>
                             </a>
                         </li>
-                        <li><a class="service-link flex items-center justify-between px-5 py-4 hover:bg-orange-50 dark:hover:bg-gray-700/50 text-sm font-medium text-gray-700 dark:text-gray-200 hover:text-orange-600 group/link"
+                        <li><a class="service-link flex items-center justify-between px-4 sm:px-5 py-3 sm:py-4 hover:bg-orange-50 dark:hover:bg-gray-700/50 text-xs sm:text-sm font-medium text-gray-700 dark:text-gray-200 hover:text-orange-600 group/link"
                                 href="#">
                                 <span class="flex items-center gap-3">
                                     <span class="material-symbols-outlined text-lg text-gray-400 group-hover/link:text-orange-500">history</span>
                                     View Update History
                                 </span>
-                                <span class="material-symbols-outlined text-gray-300 text-lg group-hover/link:text-orange-500 group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
+                                <span class="material-symbols-outlined text-gray-300 text-lg group-hover/link:text-orange-500 group-hover/link:translate-x-1 transition-transform flex-shrink-0">arrow_forward</span>
                             </a>
                         </li>
                     </ul>
                 </div>
                 <div
                     class="service-card bg-gradient-to-br from-white to-green-50/30 dark:from-gray-800 dark:to-gray-800 rounded-2xl shadow-lg hover:shadow-2xl border-2 border-green-100 dark:border-gray-700 overflow-hidden group h-full">
-                    <div class="p-8 bg-gradient-to-r from-green-50/50 to-transparent dark:from-gray-700/50 relative overflow-hidden">
+                    <div class="p-5 sm:p-6 md:p-8 bg-gradient-to-r from-green-50/50 to-transparent dark:from-gray-700/50 relative overflow-hidden">
                         <div class="absolute -top-6 -right-6 w-32 h-32 bg-green-500/5 rounded-full blur-2xl group-hover:bg-green-500/10 transition-all"></div>
-                        <div class="flex items-start justify-between mb-4">
-                            <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-green-500 to-green-700 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
-                                <span class="material-symbols-outlined text-3xl text-white">shield_lock</span>
+                        <div class="flex items-start justify-between mb-3 sm:mb-4">
+                            <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-gradient-to-br from-green-500 to-green-700 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                                <span class="material-symbols-outlined text-2xl sm:text-3xl text-white">shield_lock</span>
                             </div>
-                            <span class="text-xs font-bold text-green-600 bg-green-100 px-3 py-1 rounded-full">SECURE</span>
+                            <span class="text-[10px] sm:text-xs font-bold text-green-600 bg-green-100 px-2 sm:px-3 py-1 rounded-full whitespace-nowrap">SECURE</span>
                         </div>
-                        <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-2">More Services</h3>
-                        <p class="text-sm text-gray-600 dark:text-gray-400">Authentication and security tools for protection.</p>
+                        <h3 class="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white mb-2">More Services</h3>
+                        <p class="text-xs sm:text-sm text-gray-600 dark:text-gray-400">Authentication and security tools for protection.</p>
                     </div>
                     <ul class="divide-y divide-gray-100 dark:divide-gray-700 bg-white dark:bg-gray-800">
-                        <li><a class="service-link flex items-center justify-between px-5 py-4 hover:bg-green-50 dark:hover:bg-gray-700/50 text-sm font-medium text-gray-700 dark:text-gray-200 hover:text-green-600 group/link"
+                        <li><a class="service-link flex items-center justify-between px-4 sm:px-5 py-3 sm:py-4 hover:bg-green-50 dark:hover:bg-gray-700/50 text-xs sm:text-sm font-medium text-gray-700 dark:text-gray-200 hover:text-green-600 group/link"
                                 href="#">
                                 <span class="flex items-center gap-3">
                                     <span class="material-symbols-outlined text-lg text-gray-400 group-hover/link:text-green-500">verified_user</span>
                                     Verify Aadhaar Number
                                 </span>
-                                <span class="material-symbols-outlined text-gray-300 text-lg group-hover/link:text-green-500 group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
+                                <span class="material-symbols-outlined text-gray-300 text-lg group-hover/link:text-green-500 group-hover/link:translate-x-1 transition-transform flex-shrink-0">arrow_forward</span>
                             </a>
                         </li>
-                        <li><a class="service-link flex items-center justify-between px-5 py-4 hover:bg-green-50 dark:hover:bg-gray-700/50 text-sm font-medium text-gray-700 dark:text-gray-200 hover:text-green-600 group/link"
+                        <li><a class="service-link flex items-center justify-between px-4 sm:px-5 py-3 sm:py-4 hover:bg-green-50 dark:hover:bg-gray-700/50 text-xs sm:text-sm font-medium text-gray-700 dark:text-gray-200 hover:text-green-600 group/link"
                                 href="#">
                                 <span class="flex items-center gap-3">
                                     <span class="material-symbols-outlined text-lg text-gray-400 group-hover/link:text-green-500">vpn_key</span>
                                     Generate Virtual ID (VID)
                                 </span>
-                                <span class="material-symbols-outlined text-gray-300 text-lg group-hover/link:text-green-500 group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
+                                <span class="material-symbols-outlined text-gray-300 text-lg group-hover/link:text-green-500 group-hover/link:translate-x-1 transition-transform flex-shrink-0">arrow_forward</span>
                             </a>
                         </li>
-                        <li><a class="service-link flex items-center justify-between px-5 py-4 hover:bg-green-50 dark:hover:bg-gray-700/50 text-sm font-medium text-gray-700 dark:text-gray-200 hover:text-green-600 group/link"
+                        <li><a class="service-link flex items-center justify-between px-4 sm:px-5 py-3 sm:py-4 hover:bg-green-50 dark:hover:bg-gray-700/50 text-xs sm:text-sm font-medium text-gray-700 dark:text-gray-200 hover:text-green-600 group/link"
                                 href="#">
                                 <span class="flex items-center gap-3">
                                     <span class="material-symbols-outlined text-lg text-gray-400 group-hover/link:text-green-500">lock</span>
                                     Lock/Unlock Biometrics
                                 </span>
-                                <span class="material-symbols-outlined text-gray-300 text-lg group-hover/link:text-green-500 group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
+                                <span class="material-symbols-outlined text-gray-300 text-lg group-hover/link:text-green-500 group-hover/link:translate-x-1 transition-transform flex-shrink-0">arrow_forward</span>
                             </a>
                         </li>
-                        <li><a class="service-link flex items-center justify-between px-5 py-4 hover:bg-green-50 dark:hover:bg-gray-700/50 text-sm font-medium text-gray-700 dark:text-gray-200 hover:text-green-600 group/link"
+                        <li><a class="service-link flex items-center justify-between px-4 sm:px-5 py-3 sm:py-4 hover:bg-green-50 dark:hover:bg-gray-700/50 text-xs sm:text-sm font-medium text-gray-700 dark:text-gray-200 hover:text-green-600 group/link"
                                 href="#">
                                 <span class="flex items-center gap-3">
                                     <span class="material-symbols-outlined text-lg text-gray-400 group-hover/link:text-green-500">fact_check</span>
                                     Aadhaar Paperless e-KYC
                                 </span>
-                                <span class="material-symbols-outlined text-gray-300 text-lg group-hover/link:text-green-500 group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
+                                <span class="material-symbols-outlined text-gray-300 text-lg group-hover/link:text-green-500 group-hover/link:translate-x-1 transition-transform flex-shrink-0">arrow_forward</span>
                             </a>
                         </li>
-                        <li><a class="service-link flex items-center justify-between px-5 py-4 hover:bg-green-50 dark:hover:bg-gray-700/50 text-sm font-medium text-gray-700 dark:text-gray-200 hover:text-green-600 group/link"
+                        <li><a class="service-link flex items-center justify-between px-4 sm:px-5 py-3 sm:py-4 hover:bg-green-50 dark:hover:bg-gray-700/50 text-xs sm:text-sm font-medium text-gray-700 dark:text-gray-200 hover:text-green-600 group/link"
                                 href="#">
                                 <span class="flex items-center gap-3">
                                     <span class="material-symbols-outlined text-lg text-gray-400 group-hover/link:text-green-500">report</span>
                                     File a Complaint
                                 </span>
-                                <span class="material-symbols-outlined text-gray-300 text-lg group-hover/link:text-green-500 group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
+                                <span class="material-symbols-outlined text-gray-300 text-lg group-hover/link:text-green-500 group-hover/link:translate-x-1 transition-transform flex-shrink-0">arrow_forward</span>
                             </a>
                         </li>
                     </ul>
@@ -851,6 +931,13 @@
         </div>
     </footer>
 
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-toggle').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
     <script src="demo_guide.js"></script>
 </body>
 
